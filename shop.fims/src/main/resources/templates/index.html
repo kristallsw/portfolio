@@ -30,25 +30,25 @@ $(document).ready(function(){
 <div class="room-desk">
               <h3 class="pull-left"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">《윤수정 개인 구현기능》</font></font></h3>
               <div class="room-box">
-                <h5 class="text-primary"><a href="chat_room.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1. 축제홍보관리</font></font></a></h5>
+                <h5 class="text-primary"><a th:href="@{/prPromotionList}"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1. 축제홍보관리</font></font></a></h5>
                 <p><font style="vertical-align: inherit;">축제와 관련된 홍보사업을 관리하는 메뉴이며, 예산처리가 가능한 메뉴입니다. <br>홍보사업의 분류를 관리하고, 진행중인 사업을 확인할 수 있으며 새로운사업을 등록하거나 등록한 사업의 내용을 수정,삭제 할 수 있습니다.<br>
                 해당 홍보사업이 이벤트인 경우 사업상세조회시 이벤트당첨자 관리버튼이 활성화되며 당첨자를 관리할 수 있습니다. <br>홍보거래처만 따로 조회할 수도 있습니다. 
                 </font></p>
                 <p>- 구현완성도 : 70%</p>
               </div>
               <div class="room-box">
-                <h5 class="text-primary"><a href="chat_room.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2. 축제관련물품관리 (분류관리,입고,출고,거래처조회)</font></font></a></h5>
+                <h5 class="text-primary"><a th:href="@{/gFestivalInList}"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2. 축제관련물품관리 (분류관리,입고,출고,거래처조회)</font></font></a></h5>
                 <p><font style="vertical-align: inherit;">축제와 관련해서 들어오고 나가는 물품을 관리하는 메뉴이며, 예산처리가 가능한 메뉴입니다. <br>물품의 분류 선택 후 입,출고 내역응 등록합니다. 물품관련 거래처만 따로 조회할 수도 있습니다. </font></p>
                 <p>- 구현완성도 : 30%</p>
               </div>
               <div class="room-box">
-                <h5 class="text-primary"><a href="chat_room.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">3. 축제프로그램관리</font></font></a></h5>
+                <h5 class="text-primary"><a th:href="@{/proProList}"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">3. 축제프로그램관리</font></font></a></h5>
                 <p><font style="vertical-align: inherit;">축제 프로그램을 관리하는 메뉴이며, 예산처리가 가능한 메뉴입니다.<br> 축제 전체의 타임테이블을 확인할수 있고, 프로그램 분류를 관리할 수 있습니다.<br> 프로그램과, 해당 프로그램 안에서 이루어지는 세부 프로그램까지 관리가능합니다. 
                 <br>프로그램 조회시 프로그램의 내용과 세부프로그램, 세부프로그램에 참가하는 참가자를 함께 확인할 수 있습니다. <br>세부프로그램과 참가자, 참가업체를 따로 조회할 수도 있습니다. </font></p>
                 <p>- 구현완성도 : 30%</p>
               </div>
               <div class="room-box">
-                <h5 class="text-primary"><a href="chat_room.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">4. 업무일정관리</font></font></a></h5>
+                <h5 class="text-primary"><a th:href="@{/scheList}"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">4. 업무일정관리</font></font></a></h5>
                 <p><font style="vertical-align: inherit;">각 부서의 담당자와 계약 당사자인 거래처가 함께 일정관리는 하는 메뉴입니다.<br>공무원 담당자와 거래처 담당자가 계약내용에 대한 일정을 수행하며 일정을 작성하면, 서로가 내용을 확인할 수 있고 코멘트도 남길 수 있습니다. </font></p>
                 <p>- 구현완성도 : 10%</p>
               </div>
