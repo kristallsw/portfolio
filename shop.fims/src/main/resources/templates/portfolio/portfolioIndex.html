@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="kr">
+<html lang="kr" xmlns:th="http://www.thymeleaf.org" 
+xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 
   <head>
 
@@ -8,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Resume - Start Bootstrap Theme</title>
+    <title>kristall's portfolio</title>
 
     <!-- Bootstrap core CSS -->
     <link href="/portfolio/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -19,6 +20,7 @@
     <link href="/portfolio/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <link href="/portfolio/vendor/devicons/css/devicons.min.css" rel="stylesheet">
     <link href="/portfolio/vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif+KR&display=swap" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="/portfolio/css/resume.min.css" rel="stylesheet">
@@ -29,7 +31,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
       <a class="navbar-brand js-scroll-trigger" href="#page-top">
-        <span class="d-block d-lg-none">Start Bootstrap</span>
+        <span class="d-block d-lg-none">kristall's portfolio</span>
         <span class="d-none d-lg-block">
           <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="/portfolio/img/profile.jpg" alt="">
         </span>
@@ -62,14 +64,14 @@
 
       <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
         <div class="my-auto">
-          <h1 class="mb-0">윤 수정
+          <h1 class="mb-0"><span style="font-family: 'Noto Serif KR', serif;">윤수정</span>
             <span class="text-primary">Kristall YUN</span>
           </h1><br>
           <div class="subheading mb-5">
             · +82)10-9440-7154<br>
             · <a href="mailto:kristallsw@naver.com">kristallsw@naver.com</a>
           </div>
-          <p class="mb-5">대학교에서 미술이론을 전공했지만, 미술만큼이나 다양하고 무한한 가능성을 가진 소프트웨어 개발 분야에 매료되었습니다.<br>
+          <p class="mb-5" style="font-family: 'Noto Serif KR', serif;" >대학교에서 미술이론을 전공했지만, 미술만큼이나 다양하고 무한한 가능성을 가진 소프트웨어 개발 분야에 매료되었습니다.<br>
          저의 경험과 능력을 살려 남들과는 다른 정체성있는 개발자가 되고싶습니다.</p>
         </div>
       </section>
@@ -83,8 +85,8 @@
 
           <div class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="resume-content mr-auto">
-              <h3 class="mb-0"><a href="http://ksmart.or.kr/">한국스마트정보교육원</a></h3>
-              <div class="subheading mb-3">응용 소프트웨어 개발자 양성과정</div>
+              <h3 class="mb-0"><a href="http://ksmart.or.kr/" style="font-family: 'Noto Serif KR', serif;">한국스마트정보교육원</a></h3>
+              <div class="subheading mb-3" style="font-family: 'Noto Serif KR', serif;">응용 소프트웨어 개발자 양성과정</div>
               <p><a href="https://blog.naver.com/kristallsw">PERSONAL NOTE↗</a></p>
             </div>             
             <div class="resume-date text-md-right">
@@ -97,7 +99,7 @@
           <div class="resume-item d-flex flex-column flex-md-row">
             <div class="resume-content mr-auto">
               <h3 class="mb-0">경기대학교_Kyonggi University</h3>
-              <div class="subheading mb-3">미술경영학_Art Management</div>
+              <div class="subheading mb-3"><span style="font-family: 'Noto Serif KR', serif;">미술경영학</span>_Art Management</div>
               
               <p>GPA: 3.83</p>
             </div>
@@ -152,7 +154,7 @@
           <h2 class="mb-5">Awards &amp; Certifications</h2>
           <div class="subheading mb-3">Awards</div>
           <ul class="fa-ul mb-0">
-            <li>
+            <li style="font-family: 'Noto Serif KR', serif;">
               <i class="fa-li fa fa-trophy text-warning"></i>
               2019 전주시 공공데이터 활용공모전 아이디어 부문 - 우수상 (2019.12)</li>
           </ul><br><br>
@@ -173,9 +175,23 @@
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="teamProject">
         <div class="my-auto">
           <h2 class="mb-5">Team Project</h2>
-          <p>Apart from being a web developer, I enjoy most of my time being outdoors. In the winter, I am an avid skiier and novice ice climber. During the warmer months here in Colorado, I enjoy mountain biking, free climbing, and kayaking.</p>
-          <p class="mb-0">When forced indoors, I follow a number of sci-fi and fantasy genre movies and television shows, I am an aspiring chef, and I spend a large amount of my free time exploring the latest technolgy advancements in the front-end web development world.</p>
+          <div class="subheading mb-3">title</div>
+          <p style="font-family: 'Noto Serif KR', serif;" >축제 통합관리 시스템</p>
+          <div class="subheading mb-3">perpose</div>
+          <p style="font-family: 'Noto Serif KR', serif;"> 1. 전라북도 내 행정기관 업무 관리, 통계, 사용자 프로그램 신청, 예산 편성, 축제 관련 인력 활동 관리 및 평가 지원 등 효율적 축제업무 기반을 마련하여 <br>  &emsp;공무원들이 축제 업무와 현황을 조회할 수 있다.<br>
+			  2. 축제 통합 관리 시스템을 사용하는 전라북도 내 행정기관 간의 축제 관련 업무를 편리하게 사용할 수 있다.</p>
+          <div class="subheading mb-3">period</div>
+          <p style="font-family: 'Noto Serif KR', serif;">2019.10.24 - 2020.01.16 (기능구현  2019.12.06 - 2020.01.16)</p>
+          <div class="subheading mb-3">Responsibilities</div>
+          <p style="font-family: 'Noto Serif KR', serif;">축제홍보관리 / 축제프로그램관리 / 축제관련물품관리 / 업무일정관리</p>
+
         </div>
+        <div class="subheading mb-3">link</div>
+        <a th:href="@{/getSessionInfo(festCd='all_fest_350136')}" target="_blank" style="font-family: 'Noto Serif KR', serif;">· 개인 구현기능확인↗</a>
+        <a th:href="@{/gukminview/gukminMainView}" target="_blank" style="font-family: 'Noto Serif KR', serif;">· 프로젝트 메인으로 가기↗</a>
+        <a href="/portfolio/축제통합관리시스템 팀프로젝트 완료보고서.pdf" target="_blank" style="font-family: 'Noto Serif KR', serif;">· 완료보고서 확인↗</a>
+
+
       </section>
 
 

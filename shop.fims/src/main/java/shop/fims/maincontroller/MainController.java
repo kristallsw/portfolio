@@ -90,6 +90,7 @@ public class MainController {
 		session.setAttribute("F_ADMIN_NM", main.getAreacityAdminNm());	//행정기관명
 		session.setAttribute("F_CD", main.getFestCd());	//축제코드		
 		session.setAttribute("F_NM", main.getFestNm());	//축제명		
+		
 		return "index";		
 	}
 
