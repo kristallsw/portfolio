@@ -544,6 +544,7 @@ WHERE
 	p.festpr_pro_cd=(#{festprProCd}))AS a
 on a.group_cd=e.group_cd
 </select>
+
 <!-- 프로모션코드로 그룹코드조회 -->
 <select id="selectGroupCdByProCd" resultType="String">
 SELECT

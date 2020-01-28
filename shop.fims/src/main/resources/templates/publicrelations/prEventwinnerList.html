@@ -71,9 +71,9 @@ $(document).ready(function(){
                 <tbody>
                   <tr th:each="ev:${EveByPmcd}" id="eve">
                     <td th:text="${evStat.count}"></td>
-                    <td th:text="${ev.festprEveCd}"></td>
-                    <td th:text="${ev.festprEveNo}"></td>
                     <td th:text="${ev.festprProNm}"></td>
+                    <td th:text="${ev.festprEveNo}"></td>
+                    <td th:text="${ev.festprEveNm}"></td>
                     <td th:text="${ev.festprEvePhone}"></td>
                     <td th:text="${ev.festprEveAddr}"></td>
                     <td th:text="${ev.festpreveDeliDt}"></td>

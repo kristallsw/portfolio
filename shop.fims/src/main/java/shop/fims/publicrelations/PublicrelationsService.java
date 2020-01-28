@@ -192,7 +192,7 @@ public class PublicrelationsService {
 		
 		return publicrelationsMapper.updateAction(festprProCd);
 	}
-
+	// 마감상태확인
 	public String checkActionStatus(String festprProCd) {
 		return publicrelationsMapper.checkActionStatus(festprProCd);
 	}
